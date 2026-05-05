@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>東京鳥取県人会 | TOKYO TOTTORI KENJINKAI</title>
+<meta name="description" content="東京鳥取県人会は、関東近辺在住の鳥取県出身者などから組織される団体。約600名の会員と、年に一度の総会のほか、交流会や情報誌『梨花』の発行などを行っています。" />
+<meta property="og:title" content="東京鳥取県人会 | TOKYO TOTTORI KENJINKAI" />
+<meta property="og:description" content="関東でつながる、鳥取の輪。" />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/main.css" />
+
+</head>
+<body>
+
+<!-- ===== Loader ===== -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <span class="loader-jp">東京鳥取県人会</span>
+    <span class="loader-en">TOKYO &middot; TOTTORI</span>
+  </div>
+</div>
+
+<!-- ===== Navigation ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">
+      <span class="logo-mark">梨</span>
+      <span class="logo-text">
+        <span class="logo-jp">東京鳥取県人会</span>
+        <span class="logo-en">TOKYO TOTTORI</span>
+      </span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#event-signup">行事案内</a>
+      <a href="#greeting">会長挨拶</a>
+      <a href="#about">あらまし</a>
+      <a href="#officers">役員紹介</a>
+      <a href="#plan">年間事業計画</a>
+      <a href="#shops">ゆかりの店</a>
+      <a href="#newsletter">会報</a>
+      <a href="#news">新着情報</a>
+    </nav>
+
+    <a href="#join" class="nav-cta">入会する</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== Sidebar (shown after hero) ===== -->
+<aside class="sidebar" id="sidebar" aria-label="サイドナビゲーション">
+  <a href="#top" class="sidebar-logo">
+    <span class="logo-mark">梨</span>
+    <span class="logo-text">
+      <span class="logo-jp">東京鳥取県人会</span>
+      <span class="logo-en">TOKYO TOTTORI</span>
+    </span>
+  </a>
+
+  <nav class="sidebar-nav">
+    <a href="#event-signup"><span class="num">01</span><span class="lbl">行事案内</span></a>
+    <a href="#greeting"><span class="num">02</span><span class="lbl">会長挨拶</span></a>
+    <a href="#about"><span class="num">03</span><span class="lbl">あらまし</span></a>
+    <a href="#officers"><span class="num">04</span><span class="lbl">役員紹介</span></a>
+    <a href="#plan"><span class="num">05</span><span class="lbl">年間事業計画</span></a>
+    <a href="#shops"><span class="num">06</span><span class="lbl">ゆかりの店</span></a>
+    <a href="#newsletter"><span class="num">07</span><span class="lbl">会報『梨花』</span></a>
+    <a href="#news"><span class="num">08</span><span class="lbl">新着情報</span></a>
+  </nav>
+
+  <div class="sidebar-foot">
+    <a href="#join" class="sidebar-cta">
+      <span>入会する</span>
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <p class="sidebar-tel">
+      <span>事務局</span>
+      <a href="tel:0352129178">03-5212-9178</a>
+    </p>
+  </div>
+</aside>
+
+<!-- ===== Mobile menu ===== -->
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="#top">TOP</a>
+    <a href="#event-signup">行事案内</a>
+    <a href="#greeting">会長挨拶</a>
+    <a href="#about">あらまし</a>
+    <a href="#officers">役員紹介</a>
+    <a href="#plan">年間事業計画</a>
+    <a href="#shops">ゆかりの店</a>
+    <a href="#newsletter">会報『梨花』</a>
+    <a href="#news">新着情報</a>
+    <a href="#join" class="mobile-cta">入会のお申し込み →</a>
+    <a href="#event-signup" class="mobile-cta">行事のお申し込み →</a>
+  </nav>
+</div>
+
+<!-- ===== Hero (TOP) ===== -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <div class="hero-slide is-active" data-season="spring" style="background-image:url('https://images.unsplash.com/photo-1522383225653-ed111181a951?auto=format&fit=crop&w=2400&q=80');"></div>
+    <div class="hero-slide" data-season="summer" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=80');"></div>
+    <div class="hero-slide" data-season="autumn" style="background-image:url('https://images.unsplash.com/photo-1507783548227-544c3b8fc065?auto=format&fit=crop&w=2400&q=80');"></div>
+    <div class="hero-slide" data-season="winter" style="background-image:url('https://images.unsplash.com/photo-1418985991508-e47386d96a71?auto=format&fit=crop&w=2400&q=80');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-pattern"></div>
+  </div>
+
+  <div class="season-indicator" id="seasonIndicator">
+    <span class="season-line"></span>
+    <span class="season-jp" data-jp>春</span>
+    <span class="season-en" data-en>SPRING</span>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">
+      <span class="line"></span>
+      <span>EST. &middot; 約600名の会員と歩む</span>
+    </p>
+
+    <h1 class="hero-title">
+      <span class="hero-line"><span>関東で、</span></span>
+      <span class="hero-line"><span>鳥取に出会う。</span></span>
+    </h1>
+
+    <p class="hero-sub">
+      東京鳥取県人会は、関東近辺で暮らす鳥取県出身者と縁ある人たちのコミュニティ。<br />
+      年に一度の総会、世代を超えた交流会、情報誌『梨花』。<br />
+      ふるさとの空気を、東京で。
+    </p>
+
+    <div class="hero-actions">
+      <a href="#join" class="btn btn-primary">
+        <span>入会のご案内</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="#event-signup" class="btn btn-ghost">行事のお申し込み</a>
+    </div>
+  </div>
+
+  <div class="hero-meta">
+    <div><span class="num">600</span><span class="unit">名</span><span class="lbl">会員数</span></div>
+    <div><span class="num">79</span><span class="unit">号</span><span class="lbl">『梨花』</span></div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===== Marquee ===== -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>鳥取砂丘</span><span>&mdash;</span>
+    <span>大山</span><span>&mdash;</span>
+    <span>二十世紀梨</span><span>&mdash;</span>
+    <span>松葉ガニ</span><span>&mdash;</span>
+    <span>境港</span><span>&mdash;</span>
+    <span>白兎海岸</span><span>&mdash;</span>
+    <span>倉吉白壁土蔵群</span><span>&mdash;</span>
+    <span>三朝温泉</span><span>&mdash;</span>
+    <span>鳥取砂丘</span><span>&mdash;</span>
+    <span>大山</span><span>&mdash;</span>
+    <span>二十世紀梨</span><span>&mdash;</span>
+    <span>松葉ガニ</span><span>&mdash;</span>
+    <span>境港</span><span>&mdash;</span>
+    <span>白兎海岸</span><span>&mdash;</span>
+  </div>
+</section>
+
+<!-- ===== Event guide (行事案内) ===== -->
+<section class="section event-signup" id="event-signup">
+  <div class="section-head">
+    <p class="eyebrow">EVENT GUIDE</p>
+    <h2 class="section-title">行事案内</h2>
+    <p class="section-lead">総会、新年賀詞交歓会、テーマ別交流会など、各行事へのご案内とお申し込みはこちらから。会員以外の方も、事前にご相談いただければご参加いただける場合があります。</p>
+  </div>
+
+  <div class="signup-grid">
+    <div class="signup-text">
+      <p>
+        ご参加希望の方は、下記フォームより、または事務局までメール／お電話にてお知らせください。会員番号がお分かりの場合はあわせてご記入いただくとスムーズです。
+      </p>
+      <ul>
+        <li>定員のある行事はお早めにお申し込みください</li>
+        <li>キャンセルの場合は1週間前までにご連絡を</li>
+        <li>同伴者・お子さまのご参加は事前にご相談ください</li>
+        <li>会場・参加費の詳細は別途ご案内します</li>
+      </ul>
+      <p>
+        お問い合わせ先： <br />
+        <b>東京鳥取県人会事務局</b>　TEL: 03-5212-9178 ／ MAIL: tokyo@pref.tottori.lg.jp
+      </p>
+    </div>
+
+    <form class="form" onsubmit="event.preventDefault(); alert('お申し込みありがとうございます。事務局より追ってご連絡します。');">
+      <p class="form-title">行事参加お申し込みフォーム</p>
+      <div class="form-row">
+        <label>お名前 <b>*</b></label>
+        <input type="text" required placeholder="例：山陰 太郎" />
+      </div>
+      <div class="form-row">
+        <label>メールアドレス <b>*</b></label>
+        <input type="email" required placeholder="example@example.com" />
+      </div>
+      <div class="form-row">
+        <label>参加希望の行事 <b>*</b></label>
+        <select required>
+          <option value="">選択してください</option>
+          <option>新年賀詞交歓会</option>
+          <option>総会と懇親の集い</option>
+          <option>テーマ別交流会</option>
+          <option>その他</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>同伴者の人数</label>
+        <input type="number" min="0" max="10" placeholder="0" />
+      </div>
+      <div class="form-row">
+        <label>ご質問・ご要望</label>
+        <textarea placeholder="食事のアレルギー、座席のご希望など"></textarea>
+      </div>
+      <button class="form-submit" type="submit">送　信</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== Greeting (会長挨拶) ===== -->
+<section class="section greeting" id="greeting">
+  <div class="section-head">
+    <p class="eyebrow">PRESIDENT'S MESSAGE</p>
+    <h2 class="section-title">会長挨拶</h2>
+  </div>
+
+  <div class="greeting-grid">
+    <div class="greeting-portrait">
+      <div class="ph-mark">梨</div>
+    </div>
+    <div class="greeting-text">
+      <h3>関東で暮らす鳥取の縁を、<br />次の世代へ。</h3>
+      <p>
+        東京鳥取県人会のホームページをご覧いただき、誠にありがとうございます。私たちの会は、関東近辺に暮らす鳥取県出身の方々とその縁ある方々が、互いに親睦を深め、郷土・鳥取の発展に寄与することを目的とした団体です。
+      </p>
+      <p>
+        現在、約600名の会員と共に、年に一度の総会、新年賀詞交歓会、情報誌『梨花』の発行をはじめとした活動を続けております。近年は20代・30代の若い世代の入会も増え、世代を超えた新しい交流が生まれつつあります。
+      </p>
+      <p>
+        鳥取に縁ある方であれば、出身地でなくとも、関東に住んでいなくとも、どなたでもご入会いただけます。皆さまのご参加を、心よりお待ちしております。
+      </p>
+      <div class="greeting-sign">
+        <span class="role">東京鳥取県人会 会長</span>
+        <span class="name">○○ ○○</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About (あらまし) ===== -->
+<section class="section about" id="about">
+  <div class="section-head">
+    <p class="eyebrow">ABOUT</p>
+    <h2 class="section-title">あらまし</h2>
+    <p class="section-lead">
+      会の目的、組織、活動方針。&nbsp;<em>会員相互の親睦</em>と&nbsp;<em>ふるさと鳥取の発展</em>。会則第2条に掲げるこの2つを、私たちは70年近くにわたり実践してきました。
+    </p>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-text">
+      <p>
+        東京鳥取県人会は、東京及び東京付近に在住する鳥取県の出身者並びに縁故者で組織される団体です。東京及び東京付近に在住しない方でも、鳥取に縁のある方であれば、どなたでも会員となることができます。
+      </p>
+      <p>
+        会員は&nbsp;<em>普通会員</em>・&nbsp;<em>維持会員</em>（財政支援にご協力いただく会員）・&nbsp;<em>夫婦会員</em>（普通／維持会員の配偶者）の3区分。在学中の方の会費は徴収しません。
+      </p>
+      <ul class="about-points">
+        <li><span>01</span><div><b>世代を超える</b>20代から80代まで、幅広い世代が参加</div></li>
+        <li><span>02</span><div><b>気軽に参加</b>総会・賀詞交歓会・テーマ別の集まり</div></li>
+        <li><span>03</span><div><b>つながりを育む</b>会員同士のビジネス・趣味の連携も</div></li>
+        <li><span>04</span><div><b>ふるさとに還す</b>鳥取県東京本部と連携した情報発信</div></li>
+      </ul>
+    </div>
+
+    <div class="about-stats">
+      <h4>組織概要</h4>
+      <dl>
+        <div><dt>会員数</dt><dd><strong>約600</strong>名</dd></div>
+        <div><dt>会費</dt><dd>普通 ¥2,000 ／ 維持 ¥5,000 ／ 夫婦 無料</dd></div>
+        <div><dt>会計年度</dt><dd>1月1日 〜 12月31日（暦年）</dd></div>
+        <div><dt>事務局</dt><dd>鳥取県東京本部内（千代田区平河町）</dd></div>
+        <div><dt>総会</dt><dd>年1回（毎年秋ごろ）</dd></div>
+        <div><dt>会報誌</dt><dd>『梨花』年2回発行（最新 第79号）</dd></div>
+        <div><dt>役員任期</dt><dd>2年（再任可、会長は原則1回）</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Officers (役員紹介) ===== -->
+<section class="section officers" id="officers">
+  <div class="section-head">
+    <p class="eyebrow">OFFICERS</p>
+    <h2 class="section-title">役員紹介</h2>
+    <p class="section-lead">会長・副会長・幹事・会計監事の皆さまを中心に、評議員・常任幹事の方々と共に会の運営を進めています。</p>
+  </div>
+
+  <div class="officers-grid is-2col">
+    <article class="officer-card lead">
+      <div class="officer-photo"><span class="ph">梨</span></div>
+      <div class="officer-info">
+        <p class="officer-role">会 長</p>
+        <p class="officer-name">○○ ○○</p>
+        <p class="officer-meta">出身：鳥取県米子市</p>
+      </div>
+    </article>
+    <article class="officer-card">
+      <div class="officer-photo"><span class="ph">大</span></div>
+      <div class="officer-info">
+        <p class="officer-role">副会長</p>
+        <p class="officer-name">○○ ○○</p>
+        <p class="officer-meta">出身：鳥取県鳥取市</p>
+      </div>
+    </article>
+    <article class="officer-card">
+      <div class="officer-photo"><span class="ph">山</span></div>
+      <div class="officer-info">
+        <p class="officer-role">副会長</p>
+        <p class="officer-name">○○ ○○</p>
+        <p class="officer-meta">出身：鳥取県倉吉市</p>
+      </div>
+    </article>
+    <article class="officer-card">
+      <div class="officer-photo"><span class="ph">海</span></div>
+      <div class="officer-info">
+        <p class="officer-role">常任幹事</p>
+        <p class="officer-name">○○ ○○</p>
+        <p class="officer-meta">出身：鳥取県境港市</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="section-more">
+    <a href="officers.html" class="more-link">
+      <span>役員紹介の一覧を見る</span>
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ===== Annual Plan (年間事業計画) ===== -->
+<section class="section plan-section" id="plan">
+  <div class="section-head">
+    <p class="eyebrow">ANNUAL PLAN</p>
+    <h2 class="section-title">年間事業計画</h2>
+    <p class="section-lead">主要な行事の予定です。詳細は決定次第、新着情報・会報『梨花』、会員メーリングリストでご案内します。</p>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-row">
+      <div class="timeline-month">01<small>JAN</small></div>
+      <div class="timeline-event">新年賀詞交歓会<small>会員相互の新年のご挨拶。鳥取県東京本部の皆様もお招きします。</small></div>
+      <div class="timeline-place">都内ホテル</div>
+      <div class="timeline-status status-confirmed">開催確定</div>
+    </div>
+    <div class="timeline-row">
+      <div class="timeline-month">03<small>MAR</small></div>
+      <div class="timeline-event">『梨花』春号 発行<small>春の便り、会員寄稿、活動報告。</small></div>
+      <div class="timeline-place">郵送・WEB</div>
+      <div class="timeline-status status-confirmed">毎年</div>
+    </div>
+    <div class="timeline-row">
+      <div class="timeline-month">05<small>MAY</small></div>
+      <div class="timeline-event">幹事会・春の小さな集い<small>若手主催の食事会、テーマ別交流会も。</small></div>
+      <div class="timeline-place">調整中</div>
+      <div class="timeline-status status-tbd">調整中</div>
+    </div>
+    <div class="timeline-row">
+      <div class="timeline-month">10<small>OCT</small></div>
+      <div class="timeline-event">総会と懇親の集い<small>年に一度、会員が一堂に会する最大の行事。</small></div>
+      <div class="timeline-place">都内ホテル</div>
+      <div class="timeline-status status-confirmed">開催確定</div>
+    </div>
+    <div class="timeline-row">
+      <div class="timeline-month">10<small>OCT</small></div>
+      <div class="timeline-event">『梨花』秋号 発行<small>総会報告、ふるさと便り、新会員紹介。</small></div>
+      <div class="timeline-place">郵送・WEB</div>
+      <div class="timeline-status status-confirmed">毎年</div>
+    </div>
+    <div class="timeline-row">
+      <div class="timeline-month">12<small>DEC</small></div>
+      <div class="timeline-event">忘年交流会<small>年末の和やかな集い。鳥取の地酒・食材も。</small></div>
+      <div class="timeline-place">都内</div>
+      <div class="timeline-status status-tbd">調整中</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Shops (鳥取ゆかりの店紹介) ===== -->
+<section class="section shops" id="shops">
+  <div class="section-head">
+    <p class="eyebrow">TOTTORI IN TOKYO</p>
+    <h2 class="section-title">
+      鳥取ゆかりの<br />お店紹介
+    </h2>
+    <p class="section-lead">関東で鳥取の味と空気に出会えるお店。会員のみなさまからの情報をもとに掲載しています。新規情報も随時募集中です。</p>
+  </div>
+
+  <div class="shop-grid is-2col">
+    <article class="shop-card">
+      <div class="shop-image has-photo" data-c="0" style="background-image:url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=80');">
+        <span class="shop-mark">魚</span>
+      </div>
+      <div class="shop-info">
+        <p class="shop-cat">和食 / 鮮魚</p>
+        <h3 class="shop-name">境港直送 海の幸</h3>
+        <p class="shop-desc">境港から空輸される松葉ガニ、岩牡蠣、白いか。季節の鳥取を東京の味覚に。</p>
+        <div class="shop-meta"><span><b>エリア</b>銀座</span><span><b>営業</b>火〜日</span></div>
+      </div>
+    </article>
+
+    <article class="shop-card">
+      <div class="shop-image has-photo" data-c="1" style="background-image:url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80');">
+        <span class="shop-mark">梨</span>
+      </div>
+      <div class="shop-info">
+        <p class="shop-cat">カフェ / 物産</p>
+        <h3 class="shop-name">梨花 cafe &middot; market</h3>
+        <p class="shop-desc">二十世紀梨を使ったスイーツとドリンク。鳥取の銘菓・調味料も常時取り扱い。</p>
+        <div class="shop-meta"><span><b>エリア</b>新宿</span><span><b>営業</b>無休</span></div>
+      </div>
+    </article>
+
+    <article class="shop-card">
+      <div class="shop-image has-photo" data-c="2" style="background-image:url('https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1200&q=80');">
+        <span class="shop-mark">酒</span>
+      </div>
+      <div class="shop-info">
+        <p class="shop-cat">居酒屋 / 地酒</p>
+        <h3 class="shop-name">大山 sake bar</h3>
+        <p class="shop-desc">千代むすび、鷹勇、いなば鶴をはじめとした鳥取の銘酒を15種以上揃えるバル。</p>
+        <div class="shop-meta"><span><b>エリア</b>恵比寿</span><span><b>営業</b>月〜土</span></div>
+      </div>
+    </article>
+
+    <article class="shop-card">
+      <div class="shop-image has-photo" data-c="5" style="background-image:url('https://images.unsplash.com/photo-1581547113040-ee46e76b5d44?auto=format&fit=crop&w=1200&q=80');">
+        <span class="shop-mark">館</span>
+      </div>
+      <div class="shop-info">
+        <p class="shop-cat">アンテナショップ</p>
+        <h3 class="shop-name">鳥取&middot;岡山新橋館</h3>
+        <p class="shop-desc">鳥取県の特産品が一堂に。物産展や試飲会など、月替わりのイベントも充実。</p>
+        <div class="shop-meta"><span><b>エリア</b>新橋</span><span><b>営業</b>無休</span></div>
+      </div>
+    </article>
+  </div>
+
+  <div class="section-more">
+    <a href="shops.html" class="more-link">
+      <span>ゆかりの店をもっと見る</span>
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ===== Newsletter (会報) ===== -->
+<section class="section newsletter" id="newsletter">
+  <div class="section-head">
+    <p class="eyebrow">NEWSLETTER</p>
+    <h2 class="section-title">会報『梨花』</h2>
+  </div>
+
+  <div class="rika-grid">
+    <div class="rika-cover">
+      <div class="rika-num">VOL. 79 / SPRING 2026</div>
+      <div class="rika-title">梨花</div>
+      <div class="rika-sub">RIKA &mdash; PEAR BLOSSOM</div>
+    </div>
+    <div class="rika-text">
+      <h3>春の便り、ふるさとの便り。<br />会員の声を、東京と鳥取で。</h3>
+      <p>
+        『梨花』は東京鳥取県人会の機関誌として、創刊から半世紀にわたり発行を続けてきました。最新は&nbsp;<b>第79号</b>。会員の寄稿、ふるさと鳥取からの便り、活動の記録、そして次の集いのお知らせを毎号お届けしています。
+      </p>
+      <p>
+        誌名の「梨花」は、鳥取県を象徴する二十世紀梨の花から。白く、清らかで、それぞれの場所でしっかりと咲く花の姿は、会員の皆さまの姿そのものです。
+      </p>
+    </div>
+  </div>
+
+  <div class="rika-archive">
+    <p class="rika-archive-title">バックナンバー</p>
+    <div class="rika-issues">
+      <a href="#" class="rika-issue"><span class="num">79</span><span class="date">2026.03</span></a>
+      <a href="#" class="rika-issue"><span class="num">78</span><span class="date">2025.10</span></a>
+      <a href="#" class="rika-issue"><span class="num">77</span><span class="date">2025.06</span></a>
+      <a href="#" class="rika-issue"><span class="num">76</span><span class="date">2025.02</span></a>
+      <a href="#" class="rika-issue"><span class="num">75</span><span class="date">2024.10</span></a>
+      <a href="#" class="rika-issue"><span class="num">74</span><span class="date">2024.06</span></a>
+      <a href="#" class="rika-issue"><span class="num">73</span><span class="date">2024.02</span></a>
+      <a href="#" class="rika-issue"><span class="num">72</span><span class="date">2023.10</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== News (新着情報) ===== -->
+<section class="section news" id="news">
+  <div class="section-head">
+    <p class="eyebrow">NEWS</p>
+    <h2 class="section-title">新着情報</h2>
+  </div>
+
+  <div class="news-grid is-2col">
+    <a href="news/rika-79.html" class="news-card">
+      <div class="news-card-meta">
+        <time datetime="2026-03-16">2026.03.16</time>
+        <span class="tag tag-rika">梨花</span>
+      </div>
+      <h3 class="news-card-title">梨花 第79号を発行しました</h3>
+      <p class="news-card-excerpt">最新号の特集は「世代を超えるふるさと」。会員寄稿、活動報告、次回行事のご案内を収録しています。</p>
+      <span class="news-card-arrow">READ MORE <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+
+    <a href="news.html" class="news-card">
+      <div class="news-card-meta">
+        <time datetime="2026-05-01">2026.05.01</time>
+        <span class="tag tag-info">事務局連絡</span>
+      </div>
+      <h3 class="news-card-title">5月交流会の受付を開始しました</h3>
+      <p class="news-card-excerpt">5月24日開催予定の交流会について、参加申込の受付を開始しました。参加希望の方は「行事案内」からお申し込みください。</p>
+      <span class="news-card-arrow">READ MORE <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+
+    <a href="news/2026-shinnen.html" class="news-card">
+      <div class="news-card-meta">
+        <time datetime="2026-01-19">2026.01.19</time>
+        <span class="tag tag-event">イベント</span>
+      </div>
+      <h3 class="news-card-title">令和8年 新年賀詞交歓会を開催しました</h3>
+      <p class="news-card-excerpt">130名を超える会員にお集まりいただき、和やかなひとときに。当日の様子を写真と共にお届けします。</p>
+      <span class="news-card-arrow">READ MORE <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+
+    <a href="news/rika-78.html" class="news-card">
+      <div class="news-card-meta">
+        <time datetime="2025-10-30">2025.10.30</time>
+        <span class="tag tag-rika">梨花</span>
+      </div>
+      <h3 class="news-card-title">梨花 第78号を発行しました</h3>
+      <p class="news-card-excerpt">秋号は総会レポートと、新会員紹介。鳥取からの便りも盛りだくさんでお届けします。</p>
+      <span class="news-card-arrow">READ MORE <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+
+    <a href="news/2025-soukai.html" class="news-card">
+      <div class="news-card-meta">
+        <time datetime="2025-10-14">2025.10.14</time>
+        <span class="tag tag-event">イベント</span>
+      </div>
+      <h3 class="news-card-title">令和7年「総会と懇親の集い」を開催しました</h3>
+      <p class="news-card-excerpt">鳥取の食材を使った特別メニューと共に、世代を超えた交流の場となりました。</p>
+      <span class="news-card-arrow">READ MORE <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+
+    <a href="news/rika-77.html" class="news-card">
+      <div class="news-card-meta">
+        <time datetime="2025-06-25">2025.06.25</time>
+        <span class="tag tag-rika">梨花</span>
+      </div>
+      <h3 class="news-card-title">梨花 第77号を発行しました</h3>
+      <p class="news-card-excerpt">夏に向けたふるさとの便り。鳥取の若手による寄稿エッセイも掲載しています。</p>
+      <span class="news-card-arrow">READ MORE <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+
+    <a href="news/rika-76.html" class="news-card">
+      <div class="news-card-meta">
+        <time datetime="2025-02-21">2025.02.21</time>
+        <span class="tag tag-rika">梨花</span>
+      </div>
+      <h3 class="news-card-title">梨花 第76号を発行しました</h3>
+      <p class="news-card-excerpt">新年号として、年間活動方針と新役員のご紹介を中心に編集しました。</p>
+      <span class="news-card-arrow">READ MORE <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+  </div>
+
+  <div class="section-more">
+    <a href="news.html" class="more-link">
+      <span>すべての新着情報を見る</span>
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ===== Join (入会のお申し込み) ===== -->
+<section class="join" id="join">
+  <div class="join-inner">
+    <p class="eyebrow eyebrow-light">JOIN US</p>
+    <h2 class="join-title">
+      入会のお申し込み
+    </h2>
+    <p class="join-text">
+      鳥取県出身でなくても、関東に住んでいなくても、鳥取に縁のある方ならどなたでも。
+      入会申込書を印刷・ご記入の上、郵送・FAX・メールで事務局までお申し込みいただくか、電子申請でもお受けしています。
+    </p>
+
+    <div class="plans">
+      <div class="plan">
+        <p class="plan-name">普通会員</p>
+        <p class="plan-price"><span class="yen">¥</span>2,000<span class="per">/ 年</span></p>
+        <ul>
+          <li>総会・交流会への参加</li>
+          <li>情報誌『梨花』の購読</li>
+          <li>会員名簿への掲載（任意）</li>
+        </ul>
+      </div>
+      <div class="plan plan-featured">
+        <p class="plan-badge">財政支援</p>
+        <p class="plan-name">維持会員</p>
+        <p class="plan-price"><span class="yen">¥</span>5,000<span class="per">/ 年</span></p>
+        <ul>
+          <li>普通会員の特典すべて</li>
+          <li>会の運営をより強くサポート</li>
+          <li>『梨花』への謝意掲載</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <p class="plan-name">夫婦会員</p>
+        <p class="plan-price">無料<span class="per">配偶者の方</span></p>
+        <ul>
+          <li>普通会員・維持会員の配偶者</li>
+          <li>会費の徴収はありません</li>
+          <li>すべての行事にご参加いただけます</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="join-actions">
+      <a href="https://www.pref.tottori.lg.jp/32334.htm" target="_blank" rel="noopener" class="btn btn-primary btn-light">
+        <span>入会申込書を取得</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+      </a>
+      <a href="mailto:tokyo@pref.tottori.lg.jp?subject=東京鳥取県人会入会希望" class="btn btn-ghost btn-light">
+        メールで申し込む
+      </a>
+    </div>
+
+    <div class="join-bank">
+      <p class="bank-title">会費払込先（加入者名：東京鳥取県人会）</p>
+      <div class="bank-grid">
+        <div>
+          <p class="bank-label">ゆうちょ銀行から</p>
+          <p>記号 00110-6 ／ 番号 93633</p>
+        </div>
+        <div>
+          <p class="bank-label">他銀行から</p>
+          <p>〇一九店（019）／ 当座 0093633</p>
+        </div>
+      </div>
+      <p class="bank-note">※ 手数料不要の振込用紙の郵送も可能です。事務局までお気軽にご連絡ください。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Access ===== -->
+<section class="section access" id="access">
+  <div class="section-head">
+    <p class="eyebrow">ACCESS</p>
+    <h2 class="section-title">事務局</h2>
+  </div>
+
+  <div class="access-grid">
+    <div class="access-info">
+      <p class="zip">〒102-0093</p>
+      <p class="addr">
+        東京都千代田区平河町2-6-3<br />
+        都道府県会館10階<br />
+        鳥取県東京本部内 東京鳥取県人会事務局
+      </p>
+      <dl class="access-dl">
+        <div><dt>担当</dt><dd>堀田、中村、河居</dd></div>
+        <div><dt>電話</dt><dd><a href="tel:0352129178">03-5212-9178</a></dd></div>
+        <div><dt>FAX</dt><dd>03-5212-9079</dd></div>
+        <div><dt>メール</dt><dd><a href="mailto:tokyo@pref.tottori.lg.jp">tokyo@pref.tottori.lg.jp</a></dd></div>
+      </dl>
+    </div>
+
+    <div class="access-map">
+      <iframe
+        src="https://www.google.com/maps?q=%E9%83%BD%E9%81%93%E5%BA%9C%E7%9C%8C%E4%BC%9A%E9%A4%A8%E3%80%80%E5%B9%B3%E6%B2%B3%E7%94%BA&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-mark">梨</span>
+      <div>
+        <p class="footer-jp">東京鳥取県人会</p>
+        <p class="footer-en">TOKYO TOTTORI KENJINKAI</p>
+      </div>
+    </div>
+
+    <nav class="footer-links">
+      <a href="#top">TOP</a>
+      <a href="#event-signup">行事案内</a>
+      <a href="#greeting">会長挨拶</a>
+      <a href="#about">あらまし</a>
+      <a href="#officers">役員紹介</a>
+      <a href="#plan">年間事業計画</a>
+      <a href="#join">入会のお申し込み</a>
+      <a href="#shops">鳥取ゆかりの店紹介</a>
+      <a href="#newsletter">会報</a>
+      <a href="#news">新着情報</a>
+    </nav>
+
+    <p class="footer-copy">&copy; 東京鳥取県人会 / TOKYO TOTTORI KENJINKAI. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Loader
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const loader = document.getElementById('loader');
+      if (loader) loader.classList.add('is-hidden');
+    }, 1000);
+  });
+
+  // Hero seasonal slideshow
+  const slides = document.querySelectorAll('.hero-slide');
+  const indicator = document.getElementById('seasonIndicator');
+  const seasonLabels = {
+    spring: { jp: '春', en: 'SPRING' },
+    summer: { jp: '夏', en: 'SUMMER' },
+    autumn: { jp: '秋', en: 'AUTUMN' },
+    winter: { jp: '冬', en: 'WINTER' },
+  };
+  if (slides.length > 1) {
+    let idx = 0;
+    setInterval(() => {
+      slides[idx].classList.remove('is-active');
+      idx = (idx + 1) % slides.length;
+      const next = slides[idx];
+      next.classList.add('is-active');
+
+      if (indicator) {
+        const season = next.dataset.season;
+        const label = seasonLabels[season];
+        indicator.classList.add('is-changing');
+        setTimeout(() => {
+          if (label) {
+            indicator.querySelector('[data-jp]').textContent = label.jp;
+            indicator.querySelector('[data-en]').textContent = label.en;
+          }
+          indicator.classList.remove('is-changing');
+        }, 500);
+      }
+    }, 5500);
+  }
+
+  // Sticky nav
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    if (!nav) return;
+    if (window.scrollY > 40) nav.classList.add('is-scrolled');
+    else nav.classList.remove('is-scrolled');
+  };
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Sidebar — show after hero leaves viewport (desktop only)
+  const hero = document.getElementById('top');
+  const sidebarMQ = window.matchMedia('(min-width: 961px)');
+  if (hero && 'IntersectionObserver' in window) {
+    const sidebarIO = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (!sidebarMQ.matches) {
+            document.body.classList.remove('is-sidebar-active');
+            return;
+          }
+          if (e.intersectionRatio < 0.2) {
+            document.body.classList.add('is-sidebar-active');
+          } else {
+            document.body.classList.remove('is-sidebar-active');
+          }
+        });
+      },
+      { threshold: [0, 0.2, 0.5, 1] }
+    );
+    sidebarIO.observe(hero);
+    sidebarMQ.addEventListener('change', (e) => {
+      if (!e.matches) document.body.classList.remove('is-sidebar-active');
+    });
+  }
+
+  // Mobile menu
+  const toggle = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    menu.querySelectorAll('a').forEach((a) =>
+      a.addEventListener('click', () => {
+        menu.classList.remove('is-open');
+        toggle.classList.remove('is-open');
+        document.body.style.overflow = '';
+      })
+    );
+  }
+
+  // Reveal on scroll
+  const targets = document.querySelectorAll(
+    '.section-head, .greeting-grid, .about-grid, .officer-card, .timeline-row, .shop-card, .rika-grid, .rika-archive, .news-list, .plan, .join-bank, .signup-grid, .access-grid, .footer-inner'
+  );
+  targets.forEach((el) => el.classList.add('reveal'));
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-visible');
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: '0px 0px -6% 0px' }
+    );
+    targets.forEach((el) => io.observe(el));
+  } else {
+    targets.forEach((el) => el.classList.add('is-visible'));
+  }
+
+  // Smooth anchor with offset
+  document.querySelectorAll('a[href^="#"]').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      const id = a.getAttribute('href');
+      if (!id || id === '#') return;
+      const target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      const top = target.getBoundingClientRect().top + window.scrollY - 70;
+      window.scrollTo({ top, behavior: 'smooth' });
+    });
+  });
+})();
+</script>
+</body>
+</html>
