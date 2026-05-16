@@ -186,7 +186,7 @@
   <div class="section-head">
     <p class="eyebrow">NEWS</p>
     <h2 class="section-title">お知らせ</h2>
-    <p class="section-lead">会員向け行事のご案内と事務局からの定期連絡を掲載しています。メール配信との自動連携は行わず、WordPress管理画面から「お知らせ」を追加して更新する運用です。</p>
+    <p class="section-lead">会員向け行事の概要（開催日時・会場・参加条件）と、事務局からの定期連絡を掲載しています。メール配信との自動連携は行わず、WordPress管理画面から「お知らせ」を追加して更新する運用です。</p>
   </div>
 
   <div class="news-grid is-2col">
@@ -266,64 +266,6 @@
       <span>すべてのお知らせを見る</span>
       <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
-  </div>
-</section>
-
-<!-- ===== Event guide (行事案内) ===== -->
-<section class="section event-signup" id="event-signup">
-  <div class="section-head">
-    <p class="eyebrow">EVENT GUIDE</p>
-    <h2 class="section-title">行事参加フォーム</h2>
-    <p class="section-lead">お知らせに掲載された行事への参加申込フォームです。会員以外の方も、事前にご相談いただければご参加いただける場合があります。</p>
-  </div>
-
-  <div class="signup-grid">
-    <div class="signup-text">
-      <p>
-        ご参加希望の方は、下記フォームより、または事務局までメール／お電話にてお知らせください。会員番号がお分かりの場合はあわせてご記入いただくとスムーズです。
-      </p>
-      <ul>
-        <li>定員のある行事はお早めにお申し込みください</li>
-        <li>キャンセルの場合は1週間前までにご連絡を</li>
-        <li>同伴者・お子さまのご参加は事前にご相談ください</li>
-        <li>会場・参加費の詳細は別途ご案内します</li>
-      </ul>
-      <p>
-        お問い合わせ先： <br />
-        <b>東京鳥取県人会事務局</b>　TEL: 03-5212-9178 ／ MAIL: tokyo@pref.tottori.lg.jp
-      </p>
-    </div>
-
-    <form class="form" onsubmit="event.preventDefault(); alert('お申し込みありがとうございます。事務局より追ってご連絡します。');">
-      <p class="form-title">行事参加お申し込みフォーム</p>
-      <div class="form-row">
-        <label>お名前 <b>*</b></label>
-        <input type="text" required placeholder="例：山陰 太郎" />
-      </div>
-      <div class="form-row">
-        <label>メールアドレス <b>*</b></label>
-        <input type="email" required placeholder="example@example.com" />
-      </div>
-      <div class="form-row">
-        <label>参加希望の行事 <b>*</b></label>
-        <select required>
-          <option value="">選択してください</option>
-          <option>新年賀詞交歓会</option>
-          <option>総会と懇親の集い</option>
-          <option>テーマ別交流会</option>
-          <option>その他</option>
-        </select>
-      </div>
-      <div class="form-row">
-        <label>同伴者の人数</label>
-        <input type="number" min="0" max="10" placeholder="0" />
-      </div>
-      <div class="form-row">
-        <label>ご質問・ご要望</label>
-        <textarea placeholder="食事のアレルギー、座席のご希望など"></textarea>
-      </div>
-      <button class="form-submit" type="submit">送　信</button>
-    </form>
   </div>
 </section>
 
@@ -671,6 +613,64 @@
       </div>
       <p class="bank-note">※ 手数料不要の振込用紙の郵送も可能です。事務局までお気軽にご連絡ください。</p>
     </div>
+  </div>
+</section>
+
+<!-- ===== Event guide (行事案内) ===== -->
+<section class="section event-signup" id="event-signup">
+  <div class="section-head">
+    <p class="eyebrow">EVENT GUIDE</p>
+    <h2 class="section-title">行事参加フォーム</h2>
+    <p class="section-lead">お知らせに掲載された行事への参加申込フォームです。会員以外の方も、事前にご相談いただければご参加いただける場合があります。</p>
+  </div>
+
+  <div class="signup-grid">
+    <div class="signup-text">
+      <p>
+        ご参加希望の方は、下記フォームより、または事務局までメール／お電話にてお知らせください。会員番号がお分かりの場合はあわせてご記入いただくとスムーズです。
+      </p>
+      <ul>
+        <li>定員のある行事はお早めにお申し込みください</li>
+        <li>キャンセルの場合は1週間前までにご連絡を</li>
+        <li>同伴者・お子さまのご参加は事前にご相談ください</li>
+        <li>会場・参加費の詳細は別途ご案内します</li>
+      </ul>
+      <p>
+        お問い合わせ先： <br />
+        <b>東京鳥取県人会事務局</b>　TEL: 03-5212-9178 ／ MAIL: tokyo@pref.tottori.lg.jp
+      </p>
+    </div>
+
+    <form class="form" onsubmit="event.preventDefault(); alert('お申し込みありがとうございます。事務局より追ってご連絡します。');">
+      <p class="form-title">行事参加お申し込みフォーム</p>
+      <div class="form-row">
+        <label>お名前 <b>*</b></label>
+        <input type="text" required placeholder="例：山陰 太郎" />
+      </div>
+      <div class="form-row">
+        <label>メールアドレス <b>*</b></label>
+        <input type="email" required placeholder="example@example.com" />
+      </div>
+      <div class="form-row">
+        <label>参加希望の行事 <b>*</b></label>
+        <select required>
+          <option value="">選択してください</option>
+          <option>新年賀詞交歓会</option>
+          <option>総会と懇親の集い</option>
+          <option>テーマ別交流会</option>
+          <option>その他</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>同伴者の人数</label>
+        <input type="number" min="0" max="10" placeholder="0" />
+      </div>
+      <div class="form-row">
+        <label>ご質問・ご要望</label>
+        <textarea placeholder="食事のアレルギー、座席のご希望など"></textarea>
+      </div>
+      <button class="form-submit" type="submit">送　信</button>
+    </form>
   </div>
 </section>
 
