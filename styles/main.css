@@ -418,6 +418,53 @@ body.is-sidebar-active .nav { transform: translateY(-110%); opacity: 0; visibili
 .shop-meta { font-size: 12px; color: var(--c-sub); display: flex; gap: 14px; padding-top: 14px; border-top: 1px solid var(--c-line); }
 .shop-meta b { font-family: var(--f-mincho); font-weight: 500; color: var(--c-ink); margin-right: 4px; }
 
+/* Organizations (鳥取ゆかりの団体) */
+.organizations { background: var(--c-sand); }
+.org-list { display: flex; flex-direction: column; gap: 16px; }
+.org-card {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 24px;
+  align-items: center;
+  padding: 28px 32px;
+  background: var(--c-paper-2);
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-lg);
+  transition: all var(--t-base);
+}
+.org-card:hover { transform: translateY(-2px); border-color: var(--c-pear-2); box-shadow: 0 16px 32px -18px rgba(13, 27, 42, 0.12); }
+.org-mark {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--f-mincho);
+  font-size: 32px;
+  color: rgba(250, 246, 238, 0.85);
+  flex-shrink: 0;
+}
+.org-mark[data-c="0"] { background: linear-gradient(135deg, #14365e 0%, #5b7896 100%); }
+.org-mark[data-c="1"] { background: linear-gradient(135deg, #2c4a6b 0%, #8ba4bc 100%); }
+.org-mark[data-c="2"] { background: linear-gradient(135deg, #5e4528 0%, #c9a978 100%); }
+.org-mark[data-c="3"] { background: linear-gradient(135deg, #b89968 0%, #ebe1cd 100%); color: var(--c-ink); }
+.org-mark[data-c="4"] { background: linear-gradient(135deg, #d8a39b 0%, #f4dad4 100%); color: var(--c-ink); }
+.org-name { font-family: var(--f-mincho); font-size: clamp(20px, 2.5vw, 24px); font-weight: 500; letter-spacing: 0.08em; margin-bottom: 6px; }
+.org-full { font-size: 14px; color: var(--c-sub); line-height: 1.8; margin-bottom: 14px; }
+.org-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--f-mincho);
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  color: var(--c-navy);
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: color var(--t-fast);
+}
+.org-link:hover { color: var(--c-gold); }
+
 /* Newsletter (会報) */
 .newsletter { background: var(--c-sand); }
 .rika-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(32px, 6vw, 64px); align-items: center; }
@@ -556,6 +603,8 @@ body.is-sidebar-active .nav { transform: translateY(-110%); opacity: 0; visibili
   .hero-scroll { display: none; }
   .marquee-track { font-size: 14px; }
   .officers-grid, .shop-grid { grid-template-columns: 1fr; }
+  .org-card { grid-template-columns: 64px 1fr; gap: 16px; padding: 20px; }
+  .org-mark { width: 64px; height: 64px; font-size: 24px; }
   .rika-issues { grid-template-columns: repeat(2, 1fr); }
 }
 
